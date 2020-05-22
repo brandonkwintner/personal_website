@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brandon Kwintner</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+	<body>
+
+	<!-- Header -->
+		<header id="header">
+			<div class="container">
+				<div class="logo">
+					<a href="/">Brandon Kwintner</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- Adds background to header on scroll -->
+		<script>
+			$(window).on('scroll', function() {
+				if ($(window).scrollTop()) {
+					$('#header').addClass('header-bg');
+				} else {
+					$('#header').removeClass('header-bg');
+				}
+			})
+		</script>
+	
+	<!-- Home Page -->
+		<section id="banner" class="bg-img" data-bg="/laptop_bg.jpeg">
+			<div class="inner">
+				<header>
+					<h1>Hi, I'm Brandon.</h1>
+					<h3>
+						I'm a computer science student
+						</br>
+						who is passionate about software
+						</br>
+						engineering and cyber security.
+					</h3>
+					<ul>
+						<li><a id="navbutton" class="button fit" href="#about_me">About Me</a></li>
+						<li><a id="navbutton" class="button fit" href="#experience">Experience</a></li>
+						<li><a id="navbutton" class="button fit" href="#contact_me">Contact Me</a></li>
+					</ul>
+
+					<!-- Smooth scroll for buttons -->
+					<script>
+						$(document).ready(function(){
+							$("a").on('click', function(event) {
+								if (this.hash !== "") {
+									event.preventDefault();
+									var hash = this.hash;
+									$('html, body').animate({
+										scrollTop: $(hash).offset().top
+									}, 800, function(){
+										window.location.hash = hash;
+									});
+								}
+							});
+						});
+					</script>
+				</header>
+			</div>
+			<a href="#about_me" class="more"></a>
+		</section>
+
+	<!-- About Me -->
+		<section id="about_me" class="post">
+			<div id="main" class="container">
+				<div class="row">
+					<div id="laptop_languages_img" class="6u 12u$(small) bg-img" data-bg="/laptop_and_languages.png">
+					</div>
+
+					<div class="6u$ 12u$(small)">
+						<h1>About Me</h1>
+						<h3>
+							<i>"I've always believed that if you put in the work, the results will come."</i> 
+							- Michael Jordan
+						</h3>
+						<h4>
+							I am an incoming senior at the University of Maryland with a passion for producing
+							efficient, maintainable, elegant code. I have always taken pride in using my problem
+							solving abilities to solve even the most complicated of problems in a simple, strategic
+							manner. It is crucial to be well rounded in this industry, so I always strive to learn
+							any new technologies I can to remain ahead of the curve. At the end of the day, I just 
+							want to be the best software engineer I can possibly be.
+						</h4>
+						<hr/>
+						<ul id="ref_icons" class="icons">
+							<li><a href="https://www.linkedin.com/in/brandon-kwintner-b13567168/" target="_blank" class="icon round fa-linkedin-square"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/brandonkwintner" target="_blank" class="icon round fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.facebook.com/brandon.kwintner" target="_blank" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+						</ul>
+						<a id="download_button" href="downloads/Brandon_Kwintner_Resume.pdf" download="" class="button icon fa-download">Download Resume</a>
+					</div>
+				</div>	
+			</div>
+			<a href="#experience" class="more">Learn More</a>
+		</section>
+
+	<!-- Experience -->
+		<section id="experience" class="post bg-dark">
+			<div id="exp" class="container">
+				<h1 id="myexp">Experience</h1>
+
+				<!-- Internships / Jobs -->
+				<div class="row">
+					<div class="6u 12u$(small)">
+						<h3 id="sparta_systems">
+							<i id="code_fork" class="fa fa-code-fork"></i>
+							Sparta Systems
+						</h3>
+						
+						<h4>
+							As a software engineer intern, I was responsible for contributing to the 
+							design and development of their Salesforce AppExchange product. I got to 
+							work mostly on front-end development using the Lightning framework as well
+							as back-end development using Apex and SOQL. My most rewarding achievement
+							was enabling multi-language usage by fixing page render failures due to invalid 
+							HTML / Javascript encodings for the entire application. 
+						</h4>
+					</div>
+					<div class="6u$ 12u$(small)">
+						<h3 id="ta">
+							<i id="laptop" class="fa fa-laptop"></i>
+							Teaching Assistant
+						</h3>
+						<h4>
+							As a teaching assistant for CMSC131, an introductory level Java course, I 
+							hold weekly office hours, lead review sessions, and help grade projects.
+							I help students debug their code, understand course material, and ensure
+							their success in the course. I also lead weekly review sessions to help
+							any students that feel like they are behind the curve. The success of my
+							students is my top priority.
+						</h4>
+					</div>
+				</div>
+
+				<!-- Coding abilities -->
+				<div class="row">
+
+					<!-- Knowledge -->
+					<div id="knw" class="6u 12u$(small)">
+						<h3 id="knowledge">
+							<i id="file_code" class="fa fa-file-code-o"></i>
+							Knowledge
+						</h3>
+						
+						<div class="row">
+							<div class="6u 12u$(small)">
+								<h5>
+									Web Development
+								</h5>
+								<h4>
+									I strive to create detail oriented websites using HTML, CSS, 
+									Javascript, Node.js and Express.js.
+								</h4>
+							</div>
+							<div class="6u$ 12u$(small)">
+								<h5>
+									Backend Development
+								</h5>
+								<h4>
+									I have a passion for writing maintainable and reusable code using
+									Java and Python.
+								</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="6u 12u$(small)">
+								<h5>
+									Salesforce
+								</h5>
+								<h4>
+									I have written full-scale Lightning Components using HTML, CSS,
+									Javascript, Apex, and SOQL.
+								</h4>
+							</div>
+							<div class="6u$ 12u$(small)">
+								<h5>
+									Databases
+								</h5>
+								<h4>
+									With NoSQL and SQL databases such as MongoDB and MySQL, I am able 
+									to meet all data driven needs.
+								</h4>
+							</div>
+						</div>
+
+
+					</div>
+
+					<!-- My Skills -->
+					<div class="6u$ 12u$(small)">
+						<h3 id="my_skills">
+							<i id="terminal" class="fa fa-terminal"></i>
+							My Skills
+						</h3>
+						<div class="skill">
+							<h5>Java</h5>
+							<div class="progress">
+								<div class="progress-bar" data-percent="100" style="width: 100%;">
+									100%
+								</div>
+							</div>
+						</div>
+						<div class="skill">
+							<h5>Python</h5>
+							<div class="progress">
+								<div class="progress-bar" data-percent="90" style="width: 90%;">
+									90%
+								</div>
+							</div>
+						</div>
+						<div class="skill">
+							<h5>HTML / CSS / Javascript</h5>
+							<div class="progress">
+								<div class="progress-bar" data-percent="75" style="width: 75%;">
+									75%
+								</div>
+							</div>
+						</div>
+						<div class="skill">
+							<h5 style="text-transform: none;">SQL / NoSQL</h5>
+							<div class="progress">
+								<div class="progress-bar" data-percent="80" style="width: 80%;">
+									80%
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<a href="#contact_me" class="more">Learn More</a>
+		</section>
+
+	<!-- Contact Me -->
+		<section id="contact_me" class="post bg-light">
+			<div id="contact" class="inner">
+				<h1 id="contact_header">Contact Me</h1>
+				<div class="row">
+					<div class="5u 12u$(small)">
+						<div class="logo">
+							<p>Brandon Kwintner</p>
+						</div>
+						<hr id="contact_break"/>
+						<h3>
+							<i>“Learning is not attained by chance. It must be sought for with ardor 
+								and attended with diligence.”</i> - Abigail Adams
+						</h3>
+						<h4>
+							I am always eager to learn and expand my skillset with challenges and
+							opportunities. Please feel free to reach out if you think you have
+							something for me.
+						</h4>
+						<h4 id="email_addr">
+							<i id="paper_plane" class="fa fa-paper-plane"></i>
+							brandon.kwintner@gmail.com
+						</h4>
+						<h4 id="phone">
+							<i id="phone_icon" class="fa fa-phone"></i>
+							+1 &nbsp732 &nbsp513 &nbsp2795
+						</h4>
+					</div>
+					<div class="7u$ 12u$(small)">
+						<form action="/send-email" role="form" method="post">
+							<div class="field half first">
+								<label for="name">Name</label>
+								<input name="name" id="name" type="text" placeholder="Name">
+							</div>
+							<div class="field half">
+								<label for="email">Email</label>
+								<input name="email" id="email" type="email" placeholder="Email">
+							</div>
+							<div class="field">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+							</div>
+							<ul class="actions">
+								<li><input value="Send Message" class="button alt" type="submit"></li>
+							</ul>
+						</form>
+					</div>
+				</div>		
+			</div>
+		</section>
+
+	<!-- Scripts -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.scrollex.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/util.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
