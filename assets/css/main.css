@@ -134,6 +134,9 @@
 		}
 
 		/* Experience Section */
+		#experience.post {
+			padding-top: 7em;
+		}
 		
 		#experience #exp.container #myexp {
 			color: white;
@@ -151,8 +154,8 @@
 			margin-top: 0;
 			margin-bottom: 0;
 			color: #ff8a00;
-			font-family: "montserrat-small", sans-serif;
-			font-size: 2em;
+			font-family: 'Pathway Gothic One', sans-serif;
+			font-size: 2.5em;
 			text-align: left;
 		}
 
@@ -163,6 +166,7 @@
 			font-family: "montserrat-small", sans-serif;
 			font-size: 1em;
 			text-align: left;
+			margin-bottom: 1em;
 		}
 
 		#experience #exp.container .exp {
@@ -224,17 +228,18 @@
 			font-family: "montserrat-small", sans-serif;
 			font-size: 1em;
 			text-align: left;
-			margin-top: 0.5em;
+			margin-top: 0.85em;
 			margin-bottom: 0.3em;
 		}
 
 		div#knw h5 {
-			color: white;
+			color: #ff8a00;
 			font-family: "montserrat-small", sans-serif;
-			font-size: 1em;
+			font-size: 1.25em;
 			text-align: left;
 			margin-top: 0.6em;
 			margin-bottom: 0.3em;
+			text-transform: none;
 		}
 
 		div.skill .progress {
